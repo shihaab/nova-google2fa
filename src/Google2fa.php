@@ -120,7 +120,7 @@ class Google2fa extends Tool
             return response()->redirectTo(config('nova.path'));
         }
 
-        $data['error'] = 'One time password is invalid.';
+        $data['error'] = 'Code is ongeldig.';
 
         return view('google2fa::authenticate', $data);
     }
