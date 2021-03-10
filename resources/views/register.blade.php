@@ -41,7 +41,7 @@
             </svg>
             
             <p class="p-2">Om tweefactorauthenticatie in te schakelen voor uw account, moet u de code van de mobiele Google Authenticator-app invullen</p>
-            <p class="p-2">Scan de code via de app. <a target="_blank" href="https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DiOS&hl=nl" class="no-print text-primary dim font-bold no-underline">Help</a></p>
+            <p class="p-2">Scan de QR-code via de app. <a target="_blank" href="https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DiOS&hl=nl" class="no-print text-primary dim font-bold no-underline">Help</a></p>
             <div class="text-center">
                 <img src="{{ $google2fa_url }}" alt="">
             </div>
