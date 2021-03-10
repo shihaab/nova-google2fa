@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="{{ mix('app.css', 'vendor/nova') }}">
 
     <style>
+        .text-primary {
+            color: #039f3c!important;
+        }
+        button::selection {
+            outline: none!important;
+        }
         @media print
         {
             .no-print, .no-print *
@@ -31,17 +37,19 @@
             <h2 class="p-2">Tweefactorauthenticatie Mijn Digitale Buddy</h2>
             @csrf
             <p class="p-2">
-            Omdat jouw account nog geen connectie met Google Authenticator heeft zijn deze nu aangemaakt. Hieronder staan jouw herstel codes.
+                Omdat jouw account nog geen connectie met Google Authenticator heeft zijn deze nu aangemaakt. 
+            </p>
+            <p class="p-2">
                 Herstelcodes worden gebruikt om toegang te krijgen tot uw account in het geval u geen tweefactorauthenticatiecodes kunt ontvangen.
             </p>
             <p class="p-2 no-print">
-                <strong>
+                <strong style="color: #3182ce;">
                 Download, print of kopieer uw code voordat u doorgaat met het instellen van tweestapsverificatie.
                 </strong>
             </p>
             <div class="p-3">
-                <label class="block font-bold mb-2" for="co">Herstel codes
-                    <button class="no-print text-primary dim font-bold no-underline" type="button"
+                <label class="block font-bold mb-2" for="co">Herstel codes:
+                    <button style="font-weight: 900;" class="no-print text-primary dim font-bold no-underline" type="button"
                             onclick="window.print();return false;">
                         Print
                     </button>
@@ -50,13 +58,13 @@
                 <div>
                     @foreach ($recovery as $recoveryCode)
                         <ul>
-                            <li class="p-2">{{ $recoveryCode }}</li>
+                            <li style="font-family: monospace;" class="p-2">{{ $recoveryCode }}</li>
                         </ul>
                     @endforeach
                 </div>
             </div>
 
-            <button class="no-print text-primary dim font-bold float-right" type="submit">
+            <button class="no-print text-primary dim font-bold text-right w-full" type="submit">
                 Ga verder
             </button>
         </form>

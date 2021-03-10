@@ -9,7 +9,11 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('app.css', 'vendor/nova') }}">
-
+    <style>
+        .text-primary {
+            color: #039f3c!important;
+        }
+    </style>
     <script>
         function checkAutoSubmit(el) {
             if (el.value.length === 6) {
