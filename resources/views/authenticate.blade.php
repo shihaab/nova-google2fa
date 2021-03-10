@@ -13,6 +13,9 @@
         .text-primary {
             color: #039f3c!important;
         }
+        .btn-primary {
+            background-color: #039f3c!important;
+        }
     </style>
     <script>
         function checkAutoSubmit(el) {

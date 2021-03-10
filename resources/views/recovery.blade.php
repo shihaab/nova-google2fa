@@ -14,6 +14,9 @@
         .text-primary {
             color: #039f3c!important;
         }
+        .btn-primary {
+            background-color: #039f3c!important;
+        }
         button::selection {
             outline: none!important;
         }
