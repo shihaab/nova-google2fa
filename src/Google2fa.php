@@ -41,7 +41,7 @@ class Google2fa extends Tool
         );
 
         $data['google2fa_url'] = $google2fa_url;
-        $data['error'] = 'Secret is invalid.';
+        $data['error'] = 'Code is ongeldig.';
 
         return view('google2fa::register', $data);
     }
@@ -85,7 +85,7 @@ class Google2fa extends Tool
     {
         if ($recover = Request::get('recover')) {
             if ($this->isRecoveryValid($recover, json_decode(auth()->user()->user2fa->recovery, true)) === false) {
-                $data['error'] = 'Recovery key is invalid.';
+                $data['error'] = 'Herstel code is ongeldig.';
 
                 return view('google2fa::authenticate', $data);
             }
