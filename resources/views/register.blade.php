@@ -10,6 +10,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('app.css', 'vendor/nova') }}">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
         body {
             font-family: Nunito,system-ui,BlinkMacSystemFont,-apple-system,sans-serif;
         }
