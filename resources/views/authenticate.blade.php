@@ -10,6 +10,9 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('app.css', 'vendor/nova') }}">
     <style>
+        body {
+            font-family: Nunito,system-ui,BlinkMacSystemFont,-apple-system,sans-serif;
+        }
         .text-primary {
             color: #039f3c!important;
         }

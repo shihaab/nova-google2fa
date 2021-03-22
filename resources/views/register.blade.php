@@ -10,6 +10,9 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('app.css', 'vendor/nova') }}">
     <style>
+        body {
+            font-family: Nunito,system-ui,BlinkMacSystemFont,-apple-system,sans-serif;
+        }
         .text-primary {
             color: #039f3c!important;
         }
@@ -43,7 +46,7 @@
             <p class="p-2">Om tweefactorauthenticatie in te schakelen voor uw account, moet u de code van de mobiele Google Authenticator-app invullen</p>
             <p class="p-2">Scan de QR-code via de app. <a target="_blank" href="https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DiOS&hl=nl" class="no-print text-primary dim font-bold no-underline">Help</a></p>
             <div class="text-center">
-                <img src="{{ $google2fa_url }}" alt="">
+                <img src="{{ $google2fa_url }}" alt="QR-code is aan het laden...">
             </div>
 
             <div class="text-center">
